@@ -1,0 +1,15 @@
+[
+    {"name": "Great Resources For Recursive Prompts",
+    "description": "Recursion is a process of calling itself. A function that calls itself is called a recursive function. ... It is calling itself inside the function. Working of recursion in JavaScript. A recursive function must have a condition to stop calling itself."
+    
+  },
+  {
+    "name": "The Modern Javascript Tutorial",
+    "description": "A blog will go here"
+    
+  },
+  {
+    "name": "Adding Dependencies to package.json Files",
+    "description": "Another blog will go here"
+  }
+]
