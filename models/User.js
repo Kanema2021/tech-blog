@@ -1,6 +1,10 @@
+const { Model, Datatypes } = require("sequelize");
+const sequelize = require("../config/connection");
+const bcrypt = require("bcrypt");
+
 class User extends Model {
-    checkPassword(loginPw) {
-      return bcrypt.compareSync(loginPw, this.password);
+    checkPassword(loginPassword) {
+      return bcrypt.compareSync(loginPassword, this.password);
     }
   }
   
@@ -64,16 +68,3 @@ class User extends Model {
 
 
 
-// const User = require('./User');
-// const Blog = require('./Blog');
-
-// User.hasMany(Blog, {
-//   foreignKey: 'user_id',
-//   onDelete: 'CASCADE'
-// });
-
-// Blog.belongsTo(User, {
-//   foreignKey: 'user_id'
-// });
-
-// module.exports = { User, Blog };
